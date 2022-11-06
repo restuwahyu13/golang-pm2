@@ -1,7 +1,8 @@
 module.exports = {
 	apps: [
 		{
-			name: 'golang-app',
+			name: 'go-pm2',
+			namespace: 'golang'
 			script: 'main.js',
 			watch: false,
 			exec_mode: 'cluster',
