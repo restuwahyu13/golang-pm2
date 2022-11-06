@@ -5,6 +5,7 @@ module.exports = {
 			namespace: 'golang',
 			script: 'main.js',
 			watch: false,
+			autorestart: true,
 			exec_mode: 'cluster',
 			instances: 'max',
 			max_memory_restart: '512M',
