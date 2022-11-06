@@ -4,7 +4,7 @@ Example running golang application using pm2, if you don't want to use this conc
 
 # Notes Important!
 
-If you found error like this, when you run command `docker logs <container id>` ignore this error, make sure your app is running or not typing command `docker exec -it <container id> sh` in your terminal and if you already inside container typing command like this `pm2 ls` and `pm2 monit`, for make sure your app is running or check this article for resolve this issue [here](https://douglasmakey.medium.com/socket-sharding-in-linux-example-with-go-b0514d6b5d08), if you lauch app using `docker-compose` change network like this `lc.Listen(context.Background(), "tcp", "<service name>", "3000")`.
+If you found error like this, when you run command `docker logs <container id>` ignore this error, make sure your app is running or not typing command `docker exec -it <container id> sh` in your terminal and if you already inside container typing command like this `pm2 ls` and `pm2 monit`, for make sure your app is running or check this article for resolve this issue [here](https://douglasmakey.medium.com/socket-sharding-in-linux-example-with-go-b0514d6b5d08), if you lauch app using `docker-compose` change network address like this `lc.Listen(context.Background(), "tcp", "<service name>", "3000")`.
 
 ```sh
 [antimalware@antimalware go-pm2]$ docker logs 8e00
