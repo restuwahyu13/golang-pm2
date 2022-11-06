@@ -5,7 +5,7 @@ const { exec } = require('node:child_process')
  */
 ;(() => {
 	exec('./main', (err, res) => {
-		if (!err) console.info(`Golang application success: ${res}`)
-		else console.error(`Golang application error ${err}`)
+		if (err) console.info(`Go app error ${err}`)
+		console.info(`Go app success: ${res}`)
 	})
-})()
+})(
