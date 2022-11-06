@@ -1,0 +1,26 @@
+version: "3"
+services:
+  #=================================
+  # APP SERVICES ENVIRONMENT
+  #=================================
+  app:
+    container_name: golang-app
+    build: .
+    restart: always
+    healthcheck:
+      test: env | grep HOME
+      retries: 5
+      start_period: 30s
+      interval: 60s
+      timeout: 120s
+    ports:
+      - 4000:4000
+    volumes:
+      - /usr/src/goapp
+    networks:
+      - go_networks
+  #=================================
+  # NETWORKS SHARING GROUP
+  #=================================
+networks:
+  go_networks:
