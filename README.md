@@ -57,3 +57,7 @@ Golang application error Error: Command failed: ./main
 2022/11/06 08:12:43 Server listening error listen tcp :4000: bind: address already in use
 [antimalware@antimalware go-pm2]$ 
 ```
+![](https://imgur.com/0RsuBUy.png)
+![](https://imgur.com/XcRIzNs.png)
+![](https://imgur.com/CjsaacV.png)
+![](https://imgur.com/hyCoGj5.png)
